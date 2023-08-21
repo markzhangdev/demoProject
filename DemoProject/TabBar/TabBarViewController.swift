@@ -16,8 +16,11 @@ class TabBarController: UITabBarController {
     }
 
     public lazy var invoiceTabBar: UINavigationController = {
-        let invoiceTabBar = UINavigationController(rootViewController: InvoiceListContainerViewController())
-
+        let invoiceTabBar = UINavigationController()
+        
+        let coordinator = InvoiceMainCoordinator(navigationController: invoiceTabBar)
+        coordinator.start()
+        
         let title = "Invoice List"
 
         let defaultImage = UIImage(systemName: "star")
