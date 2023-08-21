@@ -159,13 +159,13 @@
 		F50A0C8E2A92F0D000EDB9BB /* InvoiceList */ = {
 			isa = PBXGroup;
 			children = (
-				F50A0C8F2A92F0D000EDB9BB /* SharedViewParts */,
-				F50A0C9C2A92F0D000EDB9BB /* InvoiceListViewModel.swift */,
-				F50A0C9D2A92F0D000EDB9BB /* InvoiceDetailsView */,
 				F50A0C9F2A92F0D000EDB9BB /* InvoiceListContainerViewController.swift */,
+				F50A0CA42A92F0D000EDB9BB /* InvoiceListView.swift */,
+				F50A0C9C2A92F0D000EDB9BB /* InvoiceListViewModel.swift */,
+				F50A0C8F2A92F0D000EDB9BB /* SharedViewParts */,
+				F50A0C9D2A92F0D000EDB9BB /* InvoiceDetailsView */,
 				F50A0CA02A92F0D000EDB9BB /* InputChecker */,
 				F50A0CA22A92F0D000EDB9BB /* CreateInvoice */,
-				F50A0CA42A92F0D000EDB9BB /* InvoiceListView.swift */,
 			);
 			path = InvoiceList;
 			sourceTree = "<group>";
@@ -201,8 +201,8 @@
 		F50A0C962A92F0D000EDB9BB /* InvoiceLineList */ = {
 			isa = PBXGroup;
 			children = (
-				F50A0C972A92F0D000EDB9BB /* InvoiceLine */,
 				F50A0C9B2A92F0D000EDB9BB /* InvoiceLineListView.swift */,
+				F50A0C972A92F0D000EDB9BB /* InvoiceLine */,
 			);
 			path = InvoiceLineList;
 			sourceTree = "<group>";
