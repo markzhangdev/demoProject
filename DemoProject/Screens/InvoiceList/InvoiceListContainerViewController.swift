@@ -16,12 +16,6 @@ class InvoiceListContainerViewController: UIViewController {
         setupTableView()
     }
 
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-        /// It's handled by InvoiceListView: OnAppear
-//        reloadTableViewData()
-    }
-
     init() {
         super.init(nibName: nil, bundle: nil)
     }
@@ -43,11 +37,4 @@ class InvoiceListContainerViewController: UIViewController {
     func setupTableView() {
         addInvoiceListView()
     }
-
-    /// Populates the cells with the invoices returned from GetInvoices
-//    func reloadTableViewData() {
-//        let invoices = viewModel.getInvoices()
-//
-//        fatalError("not implemented")
-//    }
 }

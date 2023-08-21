@@ -40,13 +40,18 @@
 		F50A0CD82A92F24500EDB9BB /* InvoiceAPIRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = F50A0CD12A92F24500EDB9BB /* InvoiceAPIRequest.swift */; };
 		F50A0CD92A92F24500EDB9BB /* InvoiceAPIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F50A0CD22A92F24500EDB9BB /* InvoiceAPIService.swift */; };
 		F50A0CDC2A92F26A00EDB9BB /* AccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F50A0CDB2A92F26A00EDB9BB /* AccountViewController.swift */; };
+		F50A0CDF2A9312DF00EDB9BB /* ProjectTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = F50A0CDE2A9312DF00EDB9BB /* ProjectTestCase.swift */; };
+		F50A0CE12A93133000EDB9BB /* InvoiceListViewModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = F50A0CE02A93133000EDB9BB /* InvoiceListViewModelTest.swift */; };
+		F50A0CE62A93141000EDB9BB /* InvoiceListScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = F50A0CE32A93141000EDB9BB /* InvoiceListScreen.swift */; };
+		F50A0CE72A93141000EDB9BB /* ScreenFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = F50A0CE42A93141000EDB9BB /* ScreenFactory.swift */; };
+		F50A0CE82A93141000EDB9BB /* CreateInvoiceScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = F50A0CE52A93141000EDB9BB /* CreateInvoiceScreen.swift */; };
+		F50A0CEC2A93141C00EDB9BB /* ProjectUITestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = F50A0CEA2A93141C00EDB9BB /* ProjectUITestCase.swift */; };
+		F50A0CED2A93141C00EDB9BB /* XCTestUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = F50A0CEB2A93141C00EDB9BB /* XCTestUtil.swift */; };
+		F50A0CEF2A93143000EDB9BB /* DemoProjectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F50A0CEE2A93143000EDB9BB /* DemoProjectUITests.swift */; };
 		F529841F2A92CC3A005976AE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F529841E2A92CC3A005976AE /* AppDelegate.swift */; };
 		F52984212A92CC3A005976AE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F52984202A92CC3A005976AE /* SceneDelegate.swift */; };
 		F52984282A92CC3B005976AE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F52984272A92CC3B005976AE /* Assets.xcassets */; };
 		F529842B2A92CC3B005976AE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F52984292A92CC3B005976AE /* LaunchScreen.storyboard */; };
-		F52984362A92CC3B005976AE /* DemoProjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F52984352A92CC3B005976AE /* DemoProjectTests.swift */; };
-		F52984402A92CC3B005976AE /* DemoProjectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F529843F2A92CC3B005976AE /* DemoProjectUITests.swift */; };
-		F52984422A92CC3B005976AE /* DemoProjectUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F52984412A92CC3B005976AE /* DemoProjectUITestsLaunchTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -100,6 +105,14 @@
 		F50A0CD12A92F24500EDB9BB /* InvoiceAPIRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InvoiceAPIRequest.swift; sourceTree = "<group>"; };
 		F50A0CD22A92F24500EDB9BB /* InvoiceAPIService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InvoiceAPIService.swift; sourceTree = "<group>"; };
 		F50A0CDB2A92F26A00EDB9BB /* AccountViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountViewController.swift; sourceTree = "<group>"; };
+		F50A0CDE2A9312DF00EDB9BB /* ProjectTestCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectTestCase.swift; sourceTree = "<group>"; };
+		F50A0CE02A93133000EDB9BB /* InvoiceListViewModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvoiceListViewModelTest.swift; sourceTree = "<group>"; };
+		F50A0CE32A93141000EDB9BB /* InvoiceListScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InvoiceListScreen.swift; sourceTree = "<group>"; };
+		F50A0CE42A93141000EDB9BB /* ScreenFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScreenFactory.swift; sourceTree = "<group>"; };
+		F50A0CE52A93141000EDB9BB /* CreateInvoiceScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateInvoiceScreen.swift; sourceTree = "<group>"; };
+		F50A0CEA2A93141C00EDB9BB /* ProjectUITestCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProjectUITestCase.swift; sourceTree = "<group>"; };
+		F50A0CEB2A93141C00EDB9BB /* XCTestUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XCTestUtil.swift; sourceTree = "<group>"; };
+		F50A0CEE2A93143000EDB9BB /* DemoProjectUITests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DemoProjectUITests.swift; sourceTree = "<group>"; };
 		F529841B2A92CC3A005976AE /* DemoProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DemoProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F529841E2A92CC3A005976AE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F52984202A92CC3A005976AE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -107,10 +120,7 @@
 		F529842A2A92CC3B005976AE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F529842C2A92CC3B005976AE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F52984312A92CC3B005976AE /* DemoProjectTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DemoProjectTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		F52984352A92CC3B005976AE /* DemoProjectTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoProjectTests.swift; sourceTree = "<group>"; };
 		F529843B2A92CC3B005976AE /* DemoProjectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DemoProjectUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		F529843F2A92CC3B005976AE /* DemoProjectUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoProjectUITests.swift; sourceTree = "<group>"; };
-		F52984412A92CC3B005976AE /* DemoProjectUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoProjectUITestsLaunchTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -302,6 +312,25 @@
 			path = Screens;
 			sourceTree = "<group>";
 		};
+		F50A0CE22A93141000EDB9BB /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				F50A0CE32A93141000EDB9BB /* InvoiceListScreen.swift */,
+				F50A0CE42A93141000EDB9BB /* ScreenFactory.swift */,
+				F50A0CE52A93141000EDB9BB /* CreateInvoiceScreen.swift */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		F50A0CE92A93141C00EDB9BB /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				F50A0CEA2A93141C00EDB9BB /* ProjectUITestCase.swift */,
+				F50A0CEB2A93141C00EDB9BB /* XCTestUtil.swift */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
 		F52984122A92CC3A005976AE = {
 			isa = PBXGroup;
 			children = (
@@ -342,7 +371,8 @@
 		F52984342A92CC3B005976AE /* DemoProjectTests */ = {
 			isa = PBXGroup;
 			children = (
-				F52984352A92CC3B005976AE /* DemoProjectTests.swift */,
+				F50A0CDE2A9312DF00EDB9BB /* ProjectTestCase.swift */,
+				F50A0CE02A93133000EDB9BB /* InvoiceListViewModelTest.swift */,
 			);
 			path = DemoProjectTests;
 			sourceTree = "<group>";
@@ -350,8 +380,9 @@
 		F529843E2A92CC3B005976AE /* DemoProjectUITests */ = {
 			isa = PBXGroup;
 			children = (
-				F529843F2A92CC3B005976AE /* DemoProjectUITests.swift */,
-				F52984412A92CC3B005976AE /* DemoProjectUITestsLaunchTests.swift */,
+				F50A0CEE2A93143000EDB9BB /* DemoProjectUITests.swift */,
+				F50A0CE92A93141C00EDB9BB /* Util */,
+				F50A0CE22A93141000EDB9BB /* Screens */,
 			);
 			path = DemoProjectUITests;
 			sourceTree = "<group>";
@@ -528,7 +559,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F52984362A92CC3B005976AE /* DemoProjectTests.swift in Sources */,
+				F50A0CE12A93133000EDB9BB /* InvoiceListViewModelTest.swift in Sources */,
+				F50A0CDF2A9312DF00EDB9BB /* ProjectTestCase.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -536,8 +568,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F52984402A92CC3B005976AE /* DemoProjectUITests.swift in Sources */,
-				F52984422A92CC3B005976AE /* DemoProjectUITestsLaunchTests.swift in Sources */,
+				F50A0CE72A93141000EDB9BB /* ScreenFactory.swift in Sources */,
+				F50A0CE62A93141000EDB9BB /* InvoiceListScreen.swift in Sources */,
+				F50A0CE82A93141000EDB9BB /* CreateInvoiceScreen.swift in Sources */,
+				F50A0CEF2A93143000EDB9BB /* DemoProjectUITests.swift in Sources */,
+				F50A0CEC2A93141C00EDB9BB /* ProjectUITestCase.swift in Sources */,
+				F50A0CED2A93141C00EDB9BB /* XCTestUtil.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
