@@ -8,9 +8,40 @@
 
 /* Begin PBXBuildFile section */
 		F50A0C882A92EB2000EDB9BB /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F50A0C872A92EB2000EDB9BB /* TabBarViewController.swift */; };
+		F50A0CA52A92F0D000EDB9BB /* Invoice.swift in Sources */ = {isa = PBXBuildFile; fileRef = F50A0C912A92F0D000EDB9BB /* Invoice.swift */; };
+		F50A0CA62A92F0D000EDB9BB /* InvoiceCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F50A0C922A92F0D000EDB9BB /* InvoiceCellView.swift */; };
+		F50A0CA72A92F0D000EDB9BB /* InvoiceHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F50A0C942A92F0D000EDB9BB /* InvoiceHeaderView.swift */; };
+		F50A0CA82A92F0D000EDB9BB /* InvoiceHeaderEditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F50A0C952A92F0D000EDB9BB /* InvoiceHeaderEditView.swift */; };
+		F50A0CA92A92F0D000EDB9BB /* InvoiceLineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F50A0C982A92F0D000EDB9BB /* InvoiceLineView.swift */; };
+		F50A0CAA2A92F0D000EDB9BB /* InvoiceLine.swift in Sources */ = {isa = PBXBuildFile; fileRef = F50A0C992A92F0D000EDB9BB /* InvoiceLine.swift */; };
+		F50A0CAB2A92F0D000EDB9BB /* InvoiceLineCreateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F50A0C9A2A92F0D000EDB9BB /* InvoiceLineCreateView.swift */; };
+		F50A0CAC2A92F0D000EDB9BB /* InvoiceLineListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F50A0C9B2A92F0D000EDB9BB /* InvoiceLineListView.swift */; };
+		F50A0CAD2A92F0D000EDB9BB /* InvoiceListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F50A0C9C2A92F0D000EDB9BB /* InvoiceListViewModel.swift */; };
+		F50A0CAE2A92F0D000EDB9BB /* InvoiceDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F50A0C9E2A92F0D000EDB9BB /* InvoiceDetailsView.swift */; };
+		F50A0CAF2A92F0D000EDB9BB /* InvoiceListContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F50A0C9F2A92F0D000EDB9BB /* InvoiceListContainerViewController.swift */; };
+		F50A0CB02A92F0D000EDB9BB /* InputChecker.swift in Sources */ = {isa = PBXBuildFile; fileRef = F50A0CA12A92F0D000EDB9BB /* InputChecker.swift */; };
+		F50A0CB12A92F0D000EDB9BB /* CreateInvoiceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F50A0CA32A92F0D000EDB9BB /* CreateInvoiceView.swift */; };
+		F50A0CB22A92F0D000EDB9BB /* InvoiceListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F50A0CA42A92F0D000EDB9BB /* InvoiceListView.swift */; };
+		F50A0CBC2A92F18C00EDB9BB /* NumberFormatter+CurrencyFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F50A0CB42A92F18C00EDB9BB /* NumberFormatter+CurrencyFormatter.swift */; };
+		F50A0CBD2A92F18C00EDB9BB /* UIViewController+addChildViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F50A0CB52A92F18C00EDB9BB /* UIViewController+addChildViewController.swift */; };
+		F50A0CBE2A92F18C00EDB9BB /* InvoiceError.swift in Sources */ = {isa = PBXBuildFile; fileRef = F50A0CB62A92F18C00EDB9BB /* InvoiceError.swift */; };
+		F50A0CBF2A92F18C00EDB9BB /* UIView+fill.swift in Sources */ = {isa = PBXBuildFile; fileRef = F50A0CB72A92F18C00EDB9BB /* UIView+fill.swift */; };
+		F50A0CC02A92F18C00EDB9BB /* View+Modify.swift in Sources */ = {isa = PBXBuildFile; fileRef = F50A0CB82A92F18C00EDB9BB /* View+Modify.swift */; };
+		F50A0CC12A92F18C00EDB9BB /* Decimal+Round.swift in Sources */ = {isa = PBXBuildFile; fileRef = F50A0CB92A92F18C00EDB9BB /* Decimal+Round.swift */; };
+		F50A0CC22A92F18C00EDB9BB /* DateFormatter+AESTDateFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F50A0CBA2A92F18C00EDB9BB /* DateFormatter+AESTDateFormatter.swift */; };
+		F50A0CC32A92F18C00EDB9BB /* NumbersOnlyViewModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = F50A0CBB2A92F18C00EDB9BB /* NumbersOnlyViewModifier.swift */; };
+		F50A0CC72A92F23800EDB9BB /* InvoiceDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = F50A0CC52A92F23800EDB9BB /* InvoiceDTO.swift */; };
+		F50A0CC82A92F23800EDB9BB /* InvoiceLineDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = F50A0CC62A92F23800EDB9BB /* InvoiceLineDTO.swift */; };
+		F50A0CD32A92F24500EDB9BB /* NetworkAPIRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = F50A0CCB2A92F24500EDB9BB /* NetworkAPIRequest.swift */; };
+		F50A0CD42A92F24500EDB9BB /* NetworkAPIRequestBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = F50A0CCC2A92F24500EDB9BB /* NetworkAPIRequestBuilder.swift */; };
+		F50A0CD52A92F24500EDB9BB /* HTTPURLResponse+Status.swift in Sources */ = {isa = PBXBuildFile; fileRef = F50A0CCD2A92F24500EDB9BB /* HTTPURLResponse+Status.swift */; };
+		F50A0CD62A92F24500EDB9BB /* JSONSerializable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F50A0CCE2A92F24500EDB9BB /* JSONSerializable.swift */; };
+		F50A0CD72A92F24500EDB9BB /* NetworkAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = F50A0CCF2A92F24500EDB9BB /* NetworkAPIClient.swift */; };
+		F50A0CD82A92F24500EDB9BB /* InvoiceAPIRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = F50A0CD12A92F24500EDB9BB /* InvoiceAPIRequest.swift */; };
+		F50A0CD92A92F24500EDB9BB /* InvoiceAPIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F50A0CD22A92F24500EDB9BB /* InvoiceAPIService.swift */; };
+		F50A0CDC2A92F26A00EDB9BB /* AccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F50A0CDB2A92F26A00EDB9BB /* AccountViewController.swift */; };
 		F529841F2A92CC3A005976AE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F529841E2A92CC3A005976AE /* AppDelegate.swift */; };
 		F52984212A92CC3A005976AE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F52984202A92CC3A005976AE /* SceneDelegate.swift */; };
-		F52984232A92CC3A005976AE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F52984222A92CC3A005976AE /* ViewController.swift */; };
 		F52984282A92CC3B005976AE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F52984272A92CC3B005976AE /* Assets.xcassets */; };
 		F529842B2A92CC3B005976AE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F52984292A92CC3B005976AE /* LaunchScreen.storyboard */; };
 		F52984362A92CC3B005976AE /* DemoProjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F52984352A92CC3B005976AE /* DemoProjectTests.swift */; };
@@ -37,10 +68,41 @@
 
 /* Begin PBXFileReference section */
 		F50A0C872A92EB2000EDB9BB /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
+		F50A0C912A92F0D000EDB9BB /* Invoice.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Invoice.swift; sourceTree = "<group>"; };
+		F50A0C922A92F0D000EDB9BB /* InvoiceCellView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InvoiceCellView.swift; sourceTree = "<group>"; };
+		F50A0C942A92F0D000EDB9BB /* InvoiceHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InvoiceHeaderView.swift; sourceTree = "<group>"; };
+		F50A0C952A92F0D000EDB9BB /* InvoiceHeaderEditView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InvoiceHeaderEditView.swift; sourceTree = "<group>"; };
+		F50A0C982A92F0D000EDB9BB /* InvoiceLineView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InvoiceLineView.swift; sourceTree = "<group>"; };
+		F50A0C992A92F0D000EDB9BB /* InvoiceLine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InvoiceLine.swift; sourceTree = "<group>"; };
+		F50A0C9A2A92F0D000EDB9BB /* InvoiceLineCreateView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InvoiceLineCreateView.swift; sourceTree = "<group>"; };
+		F50A0C9B2A92F0D000EDB9BB /* InvoiceLineListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InvoiceLineListView.swift; sourceTree = "<group>"; };
+		F50A0C9C2A92F0D000EDB9BB /* InvoiceListViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InvoiceListViewModel.swift; sourceTree = "<group>"; };
+		F50A0C9E2A92F0D000EDB9BB /* InvoiceDetailsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InvoiceDetailsView.swift; sourceTree = "<group>"; };
+		F50A0C9F2A92F0D000EDB9BB /* InvoiceListContainerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InvoiceListContainerViewController.swift; sourceTree = "<group>"; };
+		F50A0CA12A92F0D000EDB9BB /* InputChecker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InputChecker.swift; sourceTree = "<group>"; };
+		F50A0CA32A92F0D000EDB9BB /* CreateInvoiceView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateInvoiceView.swift; sourceTree = "<group>"; };
+		F50A0CA42A92F0D000EDB9BB /* InvoiceListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InvoiceListView.swift; sourceTree = "<group>"; };
+		F50A0CB42A92F18C00EDB9BB /* NumberFormatter+CurrencyFormatter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NumberFormatter+CurrencyFormatter.swift"; sourceTree = "<group>"; };
+		F50A0CB52A92F18C00EDB9BB /* UIViewController+addChildViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+addChildViewController.swift"; sourceTree = "<group>"; };
+		F50A0CB62A92F18C00EDB9BB /* InvoiceError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InvoiceError.swift; sourceTree = "<group>"; };
+		F50A0CB72A92F18C00EDB9BB /* UIView+fill.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+fill.swift"; sourceTree = "<group>"; };
+		F50A0CB82A92F18C00EDB9BB /* View+Modify.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "View+Modify.swift"; sourceTree = "<group>"; };
+		F50A0CB92A92F18C00EDB9BB /* Decimal+Round.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Decimal+Round.swift"; sourceTree = "<group>"; };
+		F50A0CBA2A92F18C00EDB9BB /* DateFormatter+AESTDateFormatter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DateFormatter+AESTDateFormatter.swift"; sourceTree = "<group>"; };
+		F50A0CBB2A92F18C00EDB9BB /* NumbersOnlyViewModifier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NumbersOnlyViewModifier.swift; sourceTree = "<group>"; };
+		F50A0CC52A92F23800EDB9BB /* InvoiceDTO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InvoiceDTO.swift; sourceTree = "<group>"; };
+		F50A0CC62A92F23800EDB9BB /* InvoiceLineDTO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InvoiceLineDTO.swift; sourceTree = "<group>"; };
+		F50A0CCB2A92F24500EDB9BB /* NetworkAPIRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkAPIRequest.swift; sourceTree = "<group>"; };
+		F50A0CCC2A92F24500EDB9BB /* NetworkAPIRequestBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkAPIRequestBuilder.swift; sourceTree = "<group>"; };
+		F50A0CCD2A92F24500EDB9BB /* HTTPURLResponse+Status.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "HTTPURLResponse+Status.swift"; sourceTree = "<group>"; };
+		F50A0CCE2A92F24500EDB9BB /* JSONSerializable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONSerializable.swift; sourceTree = "<group>"; };
+		F50A0CCF2A92F24500EDB9BB /* NetworkAPIClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkAPIClient.swift; sourceTree = "<group>"; };
+		F50A0CD12A92F24500EDB9BB /* InvoiceAPIRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InvoiceAPIRequest.swift; sourceTree = "<group>"; };
+		F50A0CD22A92F24500EDB9BB /* InvoiceAPIService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InvoiceAPIService.swift; sourceTree = "<group>"; };
+		F50A0CDB2A92F26A00EDB9BB /* AccountViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountViewController.swift; sourceTree = "<group>"; };
 		F529841B2A92CC3A005976AE /* DemoProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DemoProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F529841E2A92CC3A005976AE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F52984202A92CC3A005976AE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		F52984222A92CC3A005976AE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		F52984272A92CC3B005976AE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F529842A2A92CC3B005976AE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F529842C2A92CC3B005976AE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -84,6 +146,162 @@
 			path = TabBar;
 			sourceTree = "<group>";
 		};
+		F50A0C8E2A92F0D000EDB9BB /* InvoiceList */ = {
+			isa = PBXGroup;
+			children = (
+				F50A0C8F2A92F0D000EDB9BB /* SharedViewParts */,
+				F50A0C9C2A92F0D000EDB9BB /* InvoiceListViewModel.swift */,
+				F50A0C9D2A92F0D000EDB9BB /* InvoiceDetailsView */,
+				F50A0C9F2A92F0D000EDB9BB /* InvoiceListContainerViewController.swift */,
+				F50A0CA02A92F0D000EDB9BB /* InputChecker */,
+				F50A0CA22A92F0D000EDB9BB /* CreateInvoice */,
+				F50A0CA42A92F0D000EDB9BB /* InvoiceListView.swift */,
+			);
+			path = InvoiceList;
+			sourceTree = "<group>";
+		};
+		F50A0C8F2A92F0D000EDB9BB /* SharedViewParts */ = {
+			isa = PBXGroup;
+			children = (
+				F50A0C902A92F0D000EDB9BB /* InvoiceCell */,
+				F50A0C932A92F0D000EDB9BB /* InvoiceHeader */,
+				F50A0C962A92F0D000EDB9BB /* InvoiceLineList */,
+			);
+			path = SharedViewParts;
+			sourceTree = "<group>";
+		};
+		F50A0C902A92F0D000EDB9BB /* InvoiceCell */ = {
+			isa = PBXGroup;
+			children = (
+				F50A0C912A92F0D000EDB9BB /* Invoice.swift */,
+				F50A0C922A92F0D000EDB9BB /* InvoiceCellView.swift */,
+			);
+			path = InvoiceCell;
+			sourceTree = "<group>";
+		};
+		F50A0C932A92F0D000EDB9BB /* InvoiceHeader */ = {
+			isa = PBXGroup;
+			children = (
+				F50A0C942A92F0D000EDB9BB /* InvoiceHeaderView.swift */,
+				F50A0C952A92F0D000EDB9BB /* InvoiceHeaderEditView.swift */,
+			);
+			path = InvoiceHeader;
+			sourceTree = "<group>";
+		};
+		F50A0C962A92F0D000EDB9BB /* InvoiceLineList */ = {
+			isa = PBXGroup;
+			children = (
+				F50A0C972A92F0D000EDB9BB /* InvoiceLine */,
+				F50A0C9B2A92F0D000EDB9BB /* InvoiceLineListView.swift */,
+			);
+			path = InvoiceLineList;
+			sourceTree = "<group>";
+		};
+		F50A0C972A92F0D000EDB9BB /* InvoiceLine */ = {
+			isa = PBXGroup;
+			children = (
+				F50A0C982A92F0D000EDB9BB /* InvoiceLineView.swift */,
+				F50A0C992A92F0D000EDB9BB /* InvoiceLine.swift */,
+				F50A0C9A2A92F0D000EDB9BB /* InvoiceLineCreateView.swift */,
+			);
+			path = InvoiceLine;
+			sourceTree = "<group>";
+		};
+		F50A0C9D2A92F0D000EDB9BB /* InvoiceDetailsView */ = {
+			isa = PBXGroup;
+			children = (
+				F50A0C9E2A92F0D000EDB9BB /* InvoiceDetailsView.swift */,
+			);
+			path = InvoiceDetailsView;
+			sourceTree = "<group>";
+		};
+		F50A0CA02A92F0D000EDB9BB /* InputChecker */ = {
+			isa = PBXGroup;
+			children = (
+				F50A0CA12A92F0D000EDB9BB /* InputChecker.swift */,
+			);
+			path = InputChecker;
+			sourceTree = "<group>";
+		};
+		F50A0CA22A92F0D000EDB9BB /* CreateInvoice */ = {
+			isa = PBXGroup;
+			children = (
+				F50A0CA32A92F0D000EDB9BB /* CreateInvoiceView.swift */,
+			);
+			path = CreateInvoice;
+			sourceTree = "<group>";
+		};
+		F50A0CB32A92F18C00EDB9BB /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				F50A0CB42A92F18C00EDB9BB /* NumberFormatter+CurrencyFormatter.swift */,
+				F50A0CB52A92F18C00EDB9BB /* UIViewController+addChildViewController.swift */,
+				F50A0CB62A92F18C00EDB9BB /* InvoiceError.swift */,
+				F50A0CB72A92F18C00EDB9BB /* UIView+fill.swift */,
+				F50A0CB82A92F18C00EDB9BB /* View+Modify.swift */,
+				F50A0CB92A92F18C00EDB9BB /* Decimal+Round.swift */,
+				F50A0CBA2A92F18C00EDB9BB /* DateFormatter+AESTDateFormatter.swift */,
+				F50A0CBB2A92F18C00EDB9BB /* NumbersOnlyViewModifier.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		F50A0CC42A92F23800EDB9BB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F50A0CC52A92F23800EDB9BB /* InvoiceDTO.swift */,
+				F50A0CC62A92F23800EDB9BB /* InvoiceLineDTO.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F50A0CC92A92F24500EDB9BB /* NetworkAPI */ = {
+			isa = PBXGroup;
+			children = (
+				F50A0CCA2A92F24500EDB9BB /* NetworkAPIClient */,
+				F50A0CD02A92F24500EDB9BB /* APIService */,
+			);
+			path = NetworkAPI;
+			sourceTree = "<group>";
+		};
+		F50A0CCA2A92F24500EDB9BB /* NetworkAPIClient */ = {
+			isa = PBXGroup;
+			children = (
+				F50A0CCB2A92F24500EDB9BB /* NetworkAPIRequest.swift */,
+				F50A0CCC2A92F24500EDB9BB /* NetworkAPIRequestBuilder.swift */,
+				F50A0CCD2A92F24500EDB9BB /* HTTPURLResponse+Status.swift */,
+				F50A0CCE2A92F24500EDB9BB /* JSONSerializable.swift */,
+				F50A0CCF2A92F24500EDB9BB /* NetworkAPIClient.swift */,
+			);
+			path = NetworkAPIClient;
+			sourceTree = "<group>";
+		};
+		F50A0CD02A92F24500EDB9BB /* APIService */ = {
+			isa = PBXGroup;
+			children = (
+				F50A0CD12A92F24500EDB9BB /* InvoiceAPIRequest.swift */,
+				F50A0CD22A92F24500EDB9BB /* InvoiceAPIService.swift */,
+			);
+			path = APIService;
+			sourceTree = "<group>";
+		};
+		F50A0CDA2A92F26A00EDB9BB /* Account */ = {
+			isa = PBXGroup;
+			children = (
+				F50A0CDB2A92F26A00EDB9BB /* AccountViewController.swift */,
+			);
+			path = Account;
+			sourceTree = "<group>";
+		};
+		F50A0CDD2A92F28400EDB9BB /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				F50A0C8E2A92F0D000EDB9BB /* InvoiceList */,
+				F50A0CDA2A92F26A00EDB9BB /* Account */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
 		F52984122A92CC3A005976AE = {
 			isa = PBXGroup;
 			children = (
@@ -107,10 +325,13 @@
 		F529841D2A92CC3A005976AE /* DemoProject */ = {
 			isa = PBXGroup;
 			children = (
+				F50A0CDD2A92F28400EDB9BB /* Screens */,
+				F50A0CC92A92F24500EDB9BB /* NetworkAPI */,
+				F50A0CC42A92F23800EDB9BB /* Model */,
+				F50A0CB32A92F18C00EDB9BB /* Utilities */,
 				F50A0C862A92EB0000EDB9BB /* TabBar */,
 				F529841E2A92CC3A005976AE /* AppDelegate.swift */,
 				F52984202A92CC3A005976AE /* SceneDelegate.swift */,
-				F52984222A92CC3A005976AE /* ViewController.swift */,
 				F52984272A92CC3B005976AE /* Assets.xcassets */,
 				F52984292A92CC3B005976AE /* LaunchScreen.storyboard */,
 				F529842C2A92CC3B005976AE /* Info.plist */,
@@ -265,9 +486,40 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F50A0CBD2A92F18C00EDB9BB /* UIViewController+addChildViewController.swift in Sources */,
+				F50A0CA72A92F0D000EDB9BB /* InvoiceHeaderView.swift in Sources */,
+				F50A0CD62A92F24500EDB9BB /* JSONSerializable.swift in Sources */,
+				F50A0CAE2A92F0D000EDB9BB /* InvoiceDetailsView.swift in Sources */,
+				F50A0CB02A92F0D000EDB9BB /* InputChecker.swift in Sources */,
+				F50A0CAB2A92F0D000EDB9BB /* InvoiceLineCreateView.swift in Sources */,
+				F50A0CC22A92F18C00EDB9BB /* DateFormatter+AESTDateFormatter.swift in Sources */,
+				F50A0CD52A92F24500EDB9BB /* HTTPURLResponse+Status.swift in Sources */,
+				F50A0CBF2A92F18C00EDB9BB /* UIView+fill.swift in Sources */,
+				F50A0CC72A92F23800EDB9BB /* InvoiceDTO.swift in Sources */,
+				F50A0CBE2A92F18C00EDB9BB /* InvoiceError.swift in Sources */,
+				F50A0CD42A92F24500EDB9BB /* NetworkAPIRequestBuilder.swift in Sources */,
+				F50A0CC32A92F18C00EDB9BB /* NumbersOnlyViewModifier.swift in Sources */,
+				F50A0CAD2A92F0D000EDB9BB /* InvoiceListViewModel.swift in Sources */,
+				F50A0CC12A92F18C00EDB9BB /* Decimal+Round.swift in Sources */,
+				F50A0CAA2A92F0D000EDB9BB /* InvoiceLine.swift in Sources */,
 				F50A0C882A92EB2000EDB9BB /* TabBarViewController.swift in Sources */,
-				F52984232A92CC3A005976AE /* ViewController.swift in Sources */,
+				F50A0CAC2A92F0D000EDB9BB /* InvoiceLineListView.swift in Sources */,
+				F50A0CD72A92F24500EDB9BB /* NetworkAPIClient.swift in Sources */,
+				F50A0CC82A92F23800EDB9BB /* InvoiceLineDTO.swift in Sources */,
+				F50A0CD32A92F24500EDB9BB /* NetworkAPIRequest.swift in Sources */,
+				F50A0CB22A92F0D000EDB9BB /* InvoiceListView.swift in Sources */,
+				F50A0CC02A92F18C00EDB9BB /* View+Modify.swift in Sources */,
+				F50A0CA92A92F0D000EDB9BB /* InvoiceLineView.swift in Sources */,
+				F50A0CA52A92F0D000EDB9BB /* Invoice.swift in Sources */,
+				F50A0CDC2A92F26A00EDB9BB /* AccountViewController.swift in Sources */,
+				F50A0CBC2A92F18C00EDB9BB /* NumberFormatter+CurrencyFormatter.swift in Sources */,
+				F50A0CAF2A92F0D000EDB9BB /* InvoiceListContainerViewController.swift in Sources */,
 				F529841F2A92CC3A005976AE /* AppDelegate.swift in Sources */,
+				F50A0CD92A92F24500EDB9BB /* InvoiceAPIService.swift in Sources */,
+				F50A0CA82A92F0D000EDB9BB /* InvoiceHeaderEditView.swift in Sources */,
+				F50A0CD82A92F24500EDB9BB /* InvoiceAPIRequest.swift in Sources */,
+				F50A0CB12A92F0D000EDB9BB /* CreateInvoiceView.swift in Sources */,
+				F50A0CA62A92F0D000EDB9BB /* InvoiceCellView.swift in Sources */,
 				F52984212A92CC3A005976AE /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
