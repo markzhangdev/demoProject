@@ -35,6 +35,6 @@ struct InvoiceLineView<Model: InvoiceLineProtocol>: View {
 
 struct InvoiceLineView_Previews: PreviewProvider {
     static var previews: some View {
-        InvoiceLineView(invoiceLine: InvoiceLine(invoiceLineId: 1, description: "first line", quantity: 2, cost: 2.22))
+        InvoiceLineView(invoiceLine: InvoiceLineViewModel(invoiceLineId: 1, description: "first line", quantity: 2, cost: 2.22))
     }
 }

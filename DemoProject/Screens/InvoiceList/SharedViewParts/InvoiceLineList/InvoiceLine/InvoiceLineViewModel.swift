@@ -1,5 +1,5 @@
 //
-//  InvoiceLine.swift
+//  InvoiceLineViewModel.swift
 //  DemoProject
 //
 //  Created by Zhang, Mark on 21/8/2023.
@@ -16,7 +16,14 @@ public protocol InvoiceLineProtocol: ObservableObject, Identifiable, Equatable {
     init? (_ lineDTO: InvoiceLineDTO)
 }
 
-public class InvoiceLine: InvoiceLineProtocol {
+///
+///
+/// Warning: This part is over engineered for a simple app.
+/// Only trying to demonstrate my ablility to work with protocol oriented programming complex app
+///
+///
+
+public class InvoiceLineViewModel: InvoiceLineProtocol {
     public let id = UUID()
     @Published
     public var invoiceLineId: Int
@@ -45,7 +52,7 @@ public class InvoiceLine: InvoiceLineProtocol {
         self.cost = cost.rounded(2, .bankers)
     }
 
-    public static func == (lhs: InvoiceLine, rhs: InvoiceLine) -> Bool {
+    public static func == (lhs: InvoiceLineViewModel, rhs: InvoiceLineViewModel) -> Bool {
         // MARK: Not sure about the real business requirement of how to define
 
         /// two lines are equal (same), just compare ID and quantity for now

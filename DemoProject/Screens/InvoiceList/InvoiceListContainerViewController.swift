@@ -26,7 +26,7 @@ class InvoiceListContainerViewController: UIViewController {
     }
 
     func addInvoiceListView() {
-        let invoiceViewModel = InvoiceListViewModel<Invoice<InvoiceLine>>()
+        let invoiceViewModel = InvoiceListViewModel<InvoiceViewModel<InvoiceLineViewModel>>()
         let invoiceListView = InvoiceListView(viewModel: invoiceViewModel)
         let controller = UIHostingController(rootView: invoiceListView)
         controller.view.backgroundColor = .lightGray

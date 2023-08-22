@@ -21,7 +21,7 @@ struct InvoiceListView<Model: InvoiceListViewModelProtocol>: View {
             bottomButtonArea
         }
         .sheet(isPresented: $showCreateInvoiceView) {
-            CreateInvoiceView<Invoice<InvoiceLine>> {
+            CreateInvoiceView<InvoiceViewModel<InvoiceLineViewModel>> {
                 invoice in
                 if viewModel.validateInvoiceInput(invoice as! Model.InvoiceItem) {
                     viewModel.invoiceList.append(invoice as! Model.InvoiceItem)
@@ -86,6 +86,6 @@ struct InvoiceListView<Model: InvoiceListViewModelProtocol>: View {
 
 struct InvoiceListView_Previews: PreviewProvider {
     static var previews: some View {
-        InvoiceListView(viewModel: InvoiceListViewModel<Invoice<InvoiceLine>>())
+        InvoiceListView(viewModel: InvoiceListViewModel<InvoiceViewModel<InvoiceLineViewModel>>())
     }
 }

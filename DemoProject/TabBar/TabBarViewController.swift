@@ -36,6 +36,14 @@ class TabBarController: UITabBarController {
         return invoiceTabBar
     }()
 
+    ///
+    ///
+    /// Warning: This part is just a placeholder for a more complex app.
+    /// No plan to implement it into details
+    /// Only trying to demonstrate my ablility to work under complex app stucture
+    ///
+    ///
+    
     public lazy var accountTabBar: UINavigationController = {
         let accountTabBar = UINavigationController(rootViewController: AccountViewController())
         

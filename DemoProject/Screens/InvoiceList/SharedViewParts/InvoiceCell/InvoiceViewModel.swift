@@ -1,5 +1,5 @@
 //
-// Invoice.swift
+//  InvoiceViewModel.swift
 //  DemoProject
 //
 //  Created by Zhang, Mark on 21/8/2023.
@@ -25,7 +25,14 @@ public protocol InvoiceViewModelProtocol: ObservableObject, Identifiable {
     func clone<T: InvoiceViewModelProtocol>() async throws -> T
 }
 
-public final class Invoice<InvoiceLineItem: InvoiceLineProtocol>: InvoiceViewModelProtocol {
+///
+///
+/// Warning: This part is over engineered for a simple app.
+/// Only trying to demonstrate my ablility to work with protocol oriented programming complex app
+///
+///
+
+public final class InvoiceViewModel<InvoiceLineItem: InvoiceLineProtocol>: InvoiceViewModelProtocol {
     public let id = UUID()
     @Published
     public var invoiceNumber: Int
@@ -85,7 +92,7 @@ public final class Invoice<InvoiceLineItem: InvoiceLineProtocol>: InvoiceViewMod
     // MARK: use inout here is a bit risky. Better let the caller function of the mergeInvoices
 
     ///     to hanle the after merge action of the sourceInvoice
-    func mergeInvoices(with sourceInvoice: inout Invoice) {
+    func mergeInvoices(with sourceInvoice: inout InvoiceViewModel) {
         for item in sourceInvoice.lineItems {
             if !lineItems.contains(item) {
                 lineItems.append(item)
@@ -99,7 +106,7 @@ public final class Invoice<InvoiceLineItem: InvoiceLineProtocol>: InvoiceViewMod
         let newLineItems = lineItems.map {
             InvoiceLineItem(invoiceLineId: $0.invoiceLineId, description: $0.description, quantity: $0.quantity, cost: $0.cost)
         }
-        guard let clone = Invoice(invoiceNumber: invoiceNumber, invoiceDate: invoiceDate, lineItems: newLineItems) else {
+        guard let clone = InvoiceViewModel(invoiceNumber: invoiceNumber, invoiceDate: invoiceDate, lineItems: newLineItems) else {
             throw InvoiceError.dataError
         }
         return clone as! T
@@ -117,7 +124,7 @@ public final class Invoice<InvoiceLineItem: InvoiceLineProtocol>: InvoiceViewMod
     }
 
     /// remove the line items in the current invoice that are also in the sourceInvoice
-    func removeItems(from sourceInvoice: Invoice) {
+    func removeItems(from sourceInvoice: InvoiceViewModel) {
         for item in sourceInvoice.lineItems {
             if lineItems.contains(item) {
                 removeInvoiceLine(withItem: item)

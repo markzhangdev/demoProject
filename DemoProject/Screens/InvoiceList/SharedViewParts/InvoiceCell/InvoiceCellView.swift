@@ -48,7 +48,7 @@ struct InvoiceCellView<Model: InvoiceViewModelProtocol>: View {
 
 struct InvoiceCellView_Previews: PreviewProvider {
     static var previews: some View {
-        InvoiceCellView(invoice: Invoice(invoiceNumber: 1, invoiceDate: Date(), lineItems: [InvoiceLine(invoiceLineId: 1, description: "first line", quantity: 2, cost: 2.22),
-                                                                                            InvoiceLine(invoiceLineId: 2, description: "first line", quantity: 2, cost: 2.22)])!)
+        InvoiceCellView(invoice: InvoiceViewModel(invoiceNumber: 1, invoiceDate: Date(), lineItems: [InvoiceLineViewModel(invoiceLineId: 1, description: "first line", quantity: 2, cost: 2.22),
+                                                                                            InvoiceLineViewModel(invoiceLineId: 2, description: "first line", quantity: 2, cost: 2.22)])!)
     }
 }

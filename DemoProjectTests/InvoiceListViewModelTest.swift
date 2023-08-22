@@ -9,14 +9,14 @@ import XCTest
 @testable import DemoProject
 
 final class InvoiceListViewModelTest: ProjectTestCase {
-    var viewModel: InvoiceListViewModel<Invoice<InvoiceLine>>?
-    var invoice: Invoice<InvoiceLine> {
+    var viewModel: InvoiceListViewModel<InvoiceViewModel<InvoiceLineViewModel>>?
+    var invoice: InvoiceViewModel<InvoiceLineViewModel> {
         viewModel!.invoiceList[0]
     }
 
     override func setUp() {
         super.setUp()
-        viewModel = InvoiceListViewModel<Invoice<InvoiceLine>>()
+        viewModel = InvoiceListViewModel<InvoiceViewModel<InvoiceLineViewModel>>()
         viewModel!.invoiceList = []
         viewModel!.createInvoice(invoiceDate: Date(timeIntervalSince1970: 0))
     }
@@ -27,11 +27,11 @@ final class InvoiceListViewModelTest: ProjectTestCase {
     }
 
     func testCreateInvoiceWithOneItem() {
-        invoice.addInvoiceLine(InvoiceLine(invoiceLineId: 1,
+        invoice.addInvoiceLine(InvoiceLineViewModel(invoiceLineId: 1,
                                            description: "Pizza",
                                            quantity: 1,
                                            cost: 9.99))
-        invoice.addInvoiceLine(InvoiceLine(invoiceLineId: 2,
+        invoice.addInvoiceLine(InvoiceLineViewModel(invoiceLineId: 2,
                                            description: "Pizza",
                                            quantity: 1,
                                            cost: 9.99))
@@ -41,17 +41,17 @@ final class InvoiceListViewModelTest: ProjectTestCase {
     }
 
     func testCreateInvoiceWithMultipleItemsAndQuantities() {
-        invoice.addInvoiceLine(InvoiceLine(invoiceLineId: 1,
+        invoice.addInvoiceLine(InvoiceLineViewModel(invoiceLineId: 1,
                                            description: "Banana",
                                            quantity: 4,
                                            cost: Decimal(10.21)))
 
-        invoice.addInvoiceLine(InvoiceLine(invoiceLineId: 2,
+        invoice.addInvoiceLine(InvoiceLineViewModel(invoiceLineId: 2,
                                            description: "Orange",
                                            quantity: 1,
                                            cost: Decimal(5.21)))
 
-        invoice.addInvoiceLine(InvoiceLine(invoiceLineId: 3,
+        invoice.addInvoiceLine(InvoiceLineViewModel(invoiceLineId: 3,
                                            description: "Pizza",
                                            quantity: 5,
                                            cost: 5.21))
@@ -63,12 +63,12 @@ final class InvoiceListViewModelTest: ProjectTestCase {
     }
 
     func testRemoveItem() {
-        invoice.addInvoiceLine(InvoiceLine(invoiceLineId: 1,
+        invoice.addInvoiceLine(InvoiceLineViewModel(invoiceLineId: 1,
                                            description: "Orange",
                                            quantity: 1,
                                            cost: 5.22))
 
-        invoice.addInvoiceLine(InvoiceLine(invoiceLineId: 2,
+        invoice.addInvoiceLine(InvoiceLineViewModel(invoiceLineId: 2,
                                            description: "Banana",
                                            quantity: 4,
                                            cost: 10.33))
@@ -82,17 +82,17 @@ final class InvoiceListViewModelTest: ProjectTestCase {
         viewModel!.createInvoice()
         var invoice2 = viewModel!.invoiceList[1]
 
-        invoice1.addInvoiceLine(InvoiceLine(invoiceLineId: 1,
+        invoice1.addInvoiceLine(InvoiceLineViewModel(invoiceLineId: 1,
                                             description: "Banana",
                                             quantity: 4,
                                             cost: 10.33))
 
-        invoice2.addInvoiceLine(InvoiceLine(invoiceLineId: 2,
+        invoice2.addInvoiceLine(InvoiceLineViewModel(invoiceLineId: 2,
                                             description: "Orange",
                                             quantity: 1,
                                             cost: 5.22))
 
-        invoice2.addInvoiceLine(InvoiceLine(invoiceLineId: 3,
+        invoice2.addInvoiceLine(InvoiceLineViewModel(invoiceLineId: 3,
                                             description: "Blueberries",
                                             quantity: 3,
                                             cost: 6.27))
@@ -103,13 +103,13 @@ final class InvoiceListViewModelTest: ProjectTestCase {
 
     @MainActor
     func testCloneInvoice() {
-        invoice.addInvoiceLine(InvoiceLine(invoiceLineId: 1,
+        invoice.addInvoiceLine(InvoiceLineViewModel(invoiceLineId: 1,
                                            description: "Apple",
                                            quantity: 1,
                                            cost: 6.99)
         )
 
-        invoice.addInvoiceLine(InvoiceLine(invoiceLineId: 2,
+        invoice.addInvoiceLine(InvoiceLineViewModel(invoiceLineId: 2,
                                            description: "Blueberries",
                                            quantity: 3,
                                            cost: 6.27))
@@ -117,7 +117,7 @@ final class InvoiceListViewModelTest: ProjectTestCase {
         let expectation = XCTestExpectation(description: "Async task finished")
 
         Task {
-            guard let clone: Invoice<InvoiceLine> = try? await invoice.clone() else {
+            guard let clone: InvoiceViewModel<InvoiceLineViewModel> = try? await invoice.clone() else {
                 XCTFail("Clone Invoice Failed")
                 return
             }
@@ -130,7 +130,7 @@ final class InvoiceListViewModelTest: ProjectTestCase {
     }
 
     func testInvoiceToString() {
-        invoice.addInvoiceLine(InvoiceLine(invoiceLineId: 1,
+        invoice.addInvoiceLine(InvoiceLineViewModel(invoiceLineId: 1,
                                            description: "Apple",
                                            quantity: 1,
                                            cost: 6.99))
@@ -139,17 +139,17 @@ final class InvoiceListViewModelTest: ProjectTestCase {
     }
 
     func testOrderLineItems() {
-        invoice.addInvoiceLine(InvoiceLine(invoiceLineId: 3,
+        invoice.addInvoiceLine(InvoiceLineViewModel(invoiceLineId: 3,
                                            description: "Banana",
                                            quantity: 4,
                                            cost: 10.21))
 
-        invoice.addInvoiceLine(InvoiceLine(invoiceLineId: 2,
+        invoice.addInvoiceLine(InvoiceLineViewModel(invoiceLineId: 2,
                                            description: "Orange",
                                            quantity: 1,
                                            cost: 5.21))
 
-        invoice.addInvoiceLine(InvoiceLine(invoiceLineId: 1,
+        invoice.addInvoiceLine(InvoiceLineViewModel(invoiceLineId: 1,
                                            description: "Pizza",
                                            quantity: 5,
                                            cost: 5.21))
@@ -162,17 +162,17 @@ final class InvoiceListViewModelTest: ProjectTestCase {
     }
 
     func testPreviewLineItems() {
-        invoice.addInvoiceLine(InvoiceLine(invoiceLineId: 1,
+        invoice.addInvoiceLine(InvoiceLineViewModel(invoiceLineId: 1,
                                            description: "Banana",
                                            quantity: 4,
                                            cost: 10.21))
 
-        invoice.addInvoiceLine(InvoiceLine(invoiceLineId: 2,
+        invoice.addInvoiceLine(InvoiceLineViewModel(invoiceLineId: 2,
                                            description: "Orange",
                                            quantity: 1,
                                            cost: 5.21))
 
-        invoice.addInvoiceLine(InvoiceLine(invoiceLineId: 3,
+        invoice.addInvoiceLine(InvoiceLineViewModel(invoiceLineId: 3,
                                            description: "Pizza",
                                            quantity: 5,
                                            cost: 5.21))
@@ -195,22 +195,22 @@ final class InvoiceListViewModelTest: ProjectTestCase {
         viewModel!.createInvoice()
         let invoice2 = viewModel!.invoiceList[1]
 
-        invoice1.addInvoiceLine(InvoiceLine(invoiceLineId: 1,
+        invoice1.addInvoiceLine(InvoiceLineViewModel(invoiceLineId: 1,
                                             description: "Banana",
                                             quantity: 4,
                                             cost: 10.33))
 
-        invoice1.addInvoiceLine(InvoiceLine(invoiceLineId: 3,
+        invoice1.addInvoiceLine(InvoiceLineViewModel(invoiceLineId: 3,
                                             description: "Blueberries",
                                             quantity: 3,
                                             cost: 6.27))
 
-        invoice2.addInvoiceLine(InvoiceLine(invoiceLineId: 2,
+        invoice2.addInvoiceLine(InvoiceLineViewModel(invoiceLineId: 2,
                                             description: "Orange",
                                             quantity: 1,
                                             cost: 5.22))
 
-        invoice2.addInvoiceLine(InvoiceLine(invoiceLineId: 3,
+        invoice2.addInvoiceLine(InvoiceLineViewModel(invoiceLineId: 3,
                                             description: "Blueberries",
                                             quantity: 3,
                                             cost: 6.27))
@@ -228,22 +228,22 @@ final class InvoiceListViewModelTest: ProjectTestCase {
         viewModel!.createInvoice()
         let invoice3 = viewModel!.invoiceList[2]
 
-        invoice1.addInvoiceLine(InvoiceLine(invoiceLineId: 1,
+        invoice1.addInvoiceLine(InvoiceLineViewModel(invoiceLineId: 1,
                                             description: "Banana",
                                             quantity: 4,
                                             cost: 10.33))
 
-        invoice2.addInvoiceLine(InvoiceLine(invoiceLineId: 1,
+        invoice2.addInvoiceLine(InvoiceLineViewModel(invoiceLineId: 1,
                                             description: "Orange",
                                             quantity: 1,
                                             cost: 5.22))
 
-        invoice2.addInvoiceLine(InvoiceLine(invoiceLineId: 2,
+        invoice2.addInvoiceLine(InvoiceLineViewModel(invoiceLineId: 2,
                                             description: "Blueberries",
                                             quantity: 3,
                                             cost: 6.27))
 
-        invoice3.addInvoiceLine(InvoiceLine(invoiceLineId: 1,
+        invoice3.addInvoiceLine(InvoiceLineViewModel(invoiceLineId: 1,
                                             description: "Pizza",
                                             quantity: 1,
                                             cost: 9.99))

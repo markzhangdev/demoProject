@@ -16,6 +16,13 @@ protocol InvoiceListViewModelProtocol: ObservableObject, InvoiceCellViewDelegate
     func validateInvoiceInput(_ invoice: InvoiceItem) -> Bool
 }
 
+///
+///
+/// Warning: This part is over engineered for a simple app.
+/// Only trying to demonstrate my ablility to work with protocol oriented programming complex app
+///
+///
+
 class InvoiceListViewModel<InvoiceItem: InvoiceViewModelProtocol>: InvoiceListViewModelProtocol {
     @Published var invoiceList: [InvoiceItem] = []
 
@@ -28,19 +35,19 @@ class InvoiceListViewModel<InvoiceItem: InvoiceViewModelProtocol>: InvoiceListVi
     }
 
     private func initData() {
-        createInvoice(invoiceNumber: 1, invoiceDate: Date(), lineItems: [InvoiceLine(invoiceLineId: 1, description: "first line", quantity: 2, cost: 2.22),
-                                                                         InvoiceLine(invoiceLineId: 2, description: "first line", quantity: 2, cost: 2.22)])
+        createInvoice(invoiceNumber: 1, invoiceDate: Date(), lineItems: [InvoiceLineViewModel(invoiceLineId: 1, description: "first line", quantity: 2, cost: 2.22),
+                                                                         InvoiceLineViewModel(invoiceLineId: 2, description: "first line", quantity: 2, cost: 2.22)])
     }
 
     func deleteInvoice(by indexSet: IndexSet) {
         invoiceList.remove(atOffsets: indexSet)
     }
 
-    func createInvoiceItem(invoiceNumber: Int = 1, invoiceDate: Date = Date(), lineItems: [InvoiceLine] = []) -> InvoiceItem? {
-        return Invoice(invoiceNumber: invoiceNumber, invoiceDate: invoiceDate, lineItems: lineItems) as? InvoiceItem
+    func createInvoiceItem(invoiceNumber: Int = 1, invoiceDate: Date = Date(), lineItems: [InvoiceLineViewModel] = []) -> InvoiceItem? {
+        return InvoiceViewModel(invoiceNumber: invoiceNumber, invoiceDate: invoiceDate, lineItems: lineItems) as? InvoiceItem
     }
 
-    func createInvoice(invoiceNumber: Int = 1, invoiceDate: Date = Date(), lineItems: [InvoiceLine] = []) {
+    func createInvoice(invoiceNumber: Int = 1, invoiceDate: Date = Date(), lineItems: [InvoiceLineViewModel] = []) {
         guard let invoice = createInvoiceItem(invoiceNumber: invoiceNumber, invoiceDate: invoiceDate, lineItems: lineItems) else { return }
         guard validateInvoiceInput(invoice) else {
             return

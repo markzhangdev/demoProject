@@ -26,7 +26,7 @@ struct InvoiceDetailsView<Model: InvoiceViewModelProtocol>: View, inputCheckable
                 .font(.subheadline)
                 .foregroundColor(.blue)
             InvoiceLineListView(invoice: invoice)
-            InvoiceLineCreateView<InvoiceLine> { line in
+            InvoiceLineCreateView<InvoiceLineViewModel> { line in
                 checkLineInput(line)
             }
             Button {
